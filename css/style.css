@@ -3,6 +3,8 @@
     --secondary-font: 'Raleway', sans-serif;
     --main-color: #212121;
     --secondary-color: #2196F3;
+    --third-color: #fff;
+    --social-color: #AFB1B8;
 }
 
 body {
@@ -151,9 +153,16 @@ img {
 
 /* ======TEXT BOXES HERO====== */
 .banner-background {
+
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+    url("/images/hero-background.jpg");
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .banner-content {
@@ -266,6 +275,33 @@ img {
     color: #757575;
 }
 
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-list-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.social-icon{
+    color: var(--social-color);
+}
+
+.social-icon:hover{
+    color: var(--third-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--secondary-color);
+}
 /* ======END ABOUT US====== */
 
 
