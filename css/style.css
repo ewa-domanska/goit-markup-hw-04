@@ -275,8 +275,8 @@ img {
 }
 
 .our-team-list {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
 }
 
 .box-background {
@@ -541,6 +541,7 @@ img {
     letter-spacing: 0.03em;
     cursor: pointer;
     color: #FFFFFF;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects {
@@ -548,14 +549,17 @@ img {
 }
 
 .projects-portfolio {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .projects-portfolio-list {
-    flex: 20%;
     margin: 0 10px 30px;
-    border-bottom: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
+}
+
+.projects-portfolio-list:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-portfolio-name {
@@ -564,7 +568,7 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
     padding-left: 24px;
-
+    margin-top: 20px;
 }
 
 .projects-portfolio-name-description {
