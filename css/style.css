@@ -497,10 +497,12 @@ img {
 
 .logo-border:hover > .logo-links {
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .logo-border:hover {
     border-color: var(--secondary-color);
+    cursor: pointer;
 }
 
 
